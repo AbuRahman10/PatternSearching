@@ -197,13 +197,15 @@ DFA ENFA::toDFA()
             addState(vecToString(elem), false, accept(elem));
         }
     }
-    ofstream file("output/enfaTodfa.json");
+    ofstream file(output);
     file << dfa;
     file.close();
-    return DFA("output/enfaTodfa.json");
+    return DFA(output);
 }
 
 void ENFA::print()
 {
     cout << setw(4) << enfa << endl;
 }
+
+ENFA::ENFA() {}

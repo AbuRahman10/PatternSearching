@@ -21,6 +21,7 @@ public:
     json renfa;
     vector<int> states = {0};
     set<string> alph;
+    string output;
 
     struct block {
         int start;

@@ -22,9 +22,11 @@ public:
     json enfa;
     string eps;
     set<vector<string>> allStates;
+    string output;
+
+    ENFA();
 
     explicit ENFA(string p);
-
     DFA toDFA();
     void subsetConstruction(vector<string> const &state);
     void addState(string name, bool starting, bool accepting);

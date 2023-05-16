@@ -83,8 +83,17 @@ void Pattern::searchPattern(string expression1, string expression2, bool constru
     RE re1(expression1,'e');
     RE re2(expression2,'e');
 
-    ENFA enfa1 = re1.toENFA();
-    ENFA enfa2 = re2.toENFA();
+    re1.output = "output/enfa1.json";
+    re2.output = "output/enfa2.json";
+
+    ENFA enfa1;
+    ENFA enfa2;
+
+    enfa1 = re1.toENFA();
+    enfa2 = re2.toENFA();
+
+    enfa1.output = "output/mssc1.json";
+    enfa2.output = "output/mssc2.json";
 
     DFA dfa1 = enfa1.toDFA();
     DFA dfa2 = enfa2.toDFA();

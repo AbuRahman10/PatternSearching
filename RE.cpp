@@ -279,9 +279,9 @@ ENFA RE::toENFA()
     findTransitions(start);
     buildTransitions();
     buildAlph();
-    ofstream file("output/enfa.json");
+    ofstream file(output);
     file << renfa;
     file.close();
-    ENFA enfa("output/enfa.json");
+    ENFA enfa(output);
     return enfa;
 }

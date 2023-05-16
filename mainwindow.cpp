@@ -53,7 +53,6 @@ void MainWindow::on_pushButton_clicked()
     }
     else if (!regex_one.empty() and !checking_text.empty() and !regex_two.empty() and (checked_intersection or checked_union))
     {
-        // TODO: probleem: de twee dfas worden op 1 json bestand gemaakt
         Pattern pattern(checking_text);
         bool constructie = checked_intersection;
         ui->textBrowser->clear();
