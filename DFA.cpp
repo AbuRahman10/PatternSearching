@@ -14,10 +14,14 @@ bool DFA::accepts(string data)
         str += data[i];
         if (!inAlphabet(str))
         {
+            current = start;
             return false;
         }
         for (int k = 0; k < dfa["transitions"].size(); ++k)
         {
+            string from = dfa["transitions"][k]["from"];
+            string cr = current;
+            string input = dfa["transitions"][k]["input"];
             if (dfa["transitions"][k]["from"] == current and dfa["transitions"][k]["input"] == str)
             {
                 current = dfa["transitions"][k]["to"];
@@ -25,11 +29,15 @@ bool DFA::accepts(string data)
             }
         }
     }
-    if (current == end) //als je bij jouw final state bent
+    for (string state: finalStates)
     {
-        current = start;
-        return true;
+        if (current == state) //als je bij jouw final state bent
+        {
+            current = start;
+            return true;
+        }
     }
+    current = start;
     return false;
 }
 
@@ -46,7 +54,7 @@ DFA::DFA(const string &input) : input(input)
         }
         if (dfa["states"][i]["accepting"] == true)
         {
-            end = dfa["states"][i]["name"];
+            finalStates.push_back(dfa["states"][i]["name"]);
         }
     }
 }
@@ -786,6 +794,10 @@ void DFA::makeStates(const vector<vector<string>> &vec)
 
 bool DFA::inAlphabet(string letter)
 {
+    if (letter == "e")
+    {
+        return true;
+    }
     vector<string> al = dfa["alphabet"];
     for (string lett : dfa["alphabet"])
     {

@@ -22,6 +22,7 @@ private:
     string start;
     string current;
     string end;
+    vector<string> finalStates;
 
     json dfa1;
     json dfa2;

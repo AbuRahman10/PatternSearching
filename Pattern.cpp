@@ -49,7 +49,9 @@ Pattern::Pattern(string inputtext) : inputtext(inputtext)
 void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
 {
     RE re(expression,'e');
+    re.output = "output/enfa.json";
     ENFA enfa = re.toENFA();
+    enfa.output = "output/mssc.json";
     DFA dfa = enfa.toDFA();
     DFA mindfa = dfa.minimize();
     bool foundOne = false;
@@ -63,7 +65,7 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
             i = 0;
             continue;
         }
-        bool accept = dfa.accepts(woord);
+        bool accept = mindfa.accepts(woord);
         if (accept)
         {
             string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
