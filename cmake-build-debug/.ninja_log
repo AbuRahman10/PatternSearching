@@ -1,70 +1,28 @@
 # ninja log v5
-13	241	7059437105550322	main_gui_autogen/timestamp	a9f73fce1ecba68e
-13	241	7059437105550322	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
 1246	2396	7059433859660081	CMakeFiles/main_gui.dir/main.cpp.obj	a10b0051d07e2732
-13	241	7059437105550322	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-2684	2882	7059433864492532	main_gui.exe	16cfdce01482f0d3
-13	241	7059437105550322	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
+6	220	7059462021194047	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
+6	220	7059462021194047	main_gui_autogen/timestamp	a9f73fce1ecba68e
+2591	9162	7059462110500532	main_gui.exe	f6896604531bbc6b
+6	220	7059462021194047	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
+6	220	7059462021194047	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
+227	2360	7059462042574035	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
 1242	2267	7059433858374078	CMakeFiles/main_gui.dir/main_gui_autogen/mocs_compilation.cpp.obj	9a9e2194c38372c3
-253	3217	7059437135292887	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
 267	3407	7059437137141035	CMakeFiles/main_gui.dir/RE.cpp.obj	e6656248f3f3180d
 248	4218	7059437145220792	CMakeFiles/main_gui.dir/NFA.cpp.obj	e7a678782dffff0f
 257	4299	7059437145995450	CMakeFiles/main_gui.dir/ENFA.cpp.obj	3228a9bbd4083c94
 261	4778	7059437150823935	CMakeFiles/main_gui.dir/DFA.cpp.obj	510cf2de149c3b27
-8	235	7059437549240176	main_gui_autogen/timestamp	a9f73fce1ecba68e
-8	235	7059437549240176	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-8	235	7059437549240176	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
-8	235	7059437549240176	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-246	1574	7059437562598848	CMakeFiles/main_gui.dir/Pattern.cpp.obj	abcc4bb14e1eff6b
-242	2349	7059437570360827	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
-2349	8962	7059437636408616	main_gui.exe	f6896604531bbc6b
-6	226	7059438431500307	main_gui_autogen/timestamp	a9f73fce1ecba68e
-6	226	7059438431500307	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-6	226	7059438431500307	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
-6	226	7059438431500307	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-232	2242	7059438451652320	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
-2242	8892	7059438518077005	main_gui.exe	f6896604531bbc6b
-7	219	7059439153710302	main_gui_autogen/timestamp	a9f73fce1ecba68e
-7	219	7059439153710302	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-7	219	7059439153710302	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
-7	219	7059439153710302	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-225	2227	7059439173795014	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
-2227	8830	7059439239728873	main_gui.exe	f6896604531bbc6b
-6	213	7059439549121660	main_gui_autogen/timestamp	a9f73fce1ecba68e
-6	213	7059439549121660	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-6	213	7059439549121660	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
-6	213	7059439549121660	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-219	2206	7059439569052391	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
-2207	8731	7059439634217855	main_gui.exe	f6896604531bbc6b
-6	214	7059440494729515	main_gui_autogen/timestamp	a9f73fce1ecba68e
-6	214	7059440494729515	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-6	214	7059440494729515	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
-6	214	7059440494729515	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-220	2201	7059440514580985	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
-2201	8714	7059440579624383	main_gui.exe	f6896604531bbc6b
-12	239	7059448793815512	main_gui_autogen/timestamp	a9f73fce1ecba68e
-12	239	7059448793815512	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-12	239	7059448793815512	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
-12	239	7059448793815512	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-251	2894	7059448820356596	CMakeFiles/main_gui.dir/Pattern.cpp.obj	abcc4bb14e1eff6b
-7	220	7059449106736391	main_gui_autogen/timestamp	a9f73fce1ecba68e
-7	220	7059449106736391	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-7	220	7059449106736391	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
-7	220	7059449106736391	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-226	2330	7059449127814293	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
-231	2563	7059449130090484	CMakeFiles/main_gui.dir/Pattern.cpp.obj	abcc4bb14e1eff6b
-2563	9331	7059449197749323	main_gui.exe	f6896604531bbc6b
-7	218	7059450566757184	main_gui_autogen/timestamp	a9f73fce1ecba68e
-7	218	7059450566757184	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-7	218	7059450566757184	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
-7	218	7059450566757184	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-225	2407	7059450588632354	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
-230	2667	7059450591233790	CMakeFiles/main_gui.dir/Pattern.cpp.obj	abcc4bb14e1eff6b
-2667	9283	7059450657315147	main_gui.exe	f6896604531bbc6b
-9	218	7059450966502191	main_gui_autogen/timestamp	a9f73fce1ecba68e
-9	218	7059450966502191	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-9	218	7059450966502191	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
-9	218	7059450966502191	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
-225	2390	7059450988202661	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
-229	2631	7059450990618977	CMakeFiles/main_gui.dir/Pattern.cpp.obj	abcc4bb14e1eff6b
-2631	9263	7059451056850437	main_gui.exe	f6896604531bbc6b
+232	2591	7059462044890451	CMakeFiles/main_gui.dir/Pattern.cpp.obj	abcc4bb14e1eff6b
+6	216	7059463722641290	main_gui_autogen/timestamp	a9f73fce1ecba68e
+6	216	7059463722641290	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
+6	216	7059463722641290	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
+6	216	7059463722641290	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
+223	2364	7059463744112674	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
+228	2587	7059463746297761	CMakeFiles/main_gui.dir/Pattern.cpp.obj	abcc4bb14e1eff6b
+2587	9189	7059463812273217	main_gui.exe	f6896604531bbc6b
+7	220	7059466370899101	main_gui_autogen/timestamp	a9f73fce1ecba68e
+7	220	7059466370899101	main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
+7	220	7059466370899101	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/timestamp	a9f73fce1ecba68e
+7	220	7059466370899101	C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp	a9f73fce1ecba68e
+227	2304	7059466391718671	CMakeFiles/main_gui.dir/mainwindow.cpp.obj	cfae9f2a45c083c6
+232	2513	7059466393797506	CMakeFiles/main_gui.dir/Pattern.cpp.obj	abcc4bb14e1eff6b
+2513	9073	7059466459319208	main_gui.exe	f6896604531bbc6b

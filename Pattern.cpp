@@ -66,7 +66,6 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
         bool accept = dfa.accepts(woord);
         if (accept)
         {
-            cout << "Pattern found at line: " + to_string(line) << " and indexword: " + to_string(i) << endl;
             string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
             ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
             foundOne = true;
@@ -75,12 +74,11 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
     }
     if (!foundOne)
     {
-        cout << "Pattern not found!" << endl;
         ui->textBrowser->insertPlainText(QString::fromStdString("Pattern not found!\n"));
     }
 }
 
-void Pattern::searchPattern(string expression1, string expression2, bool constructie)
+void Pattern::searchPattern(string expression1, string expression2, bool constructie, Ui_MainWindow *ui)
 {
     RE re1(expression1,'e');
     RE re2(expression2,'e');
@@ -107,13 +105,14 @@ void Pattern::searchPattern(string expression1, string expression2, bool constru
         bool accept = dfa.accepts(woord);
         if (accept)
         {
-            cout << "Pattern found at line: " + to_string(line) << " and indexword: " + to_string(i) << endl;
+            string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
+            ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
             foundOne = true;
         }
         i++;
     }
     if (!foundOne)
     {
-        cout << "Pattern not found!" << endl;
+        ui->textBrowser->insertPlainText(QString::fromStdString("Pattern not found!\n"));
     }
 }

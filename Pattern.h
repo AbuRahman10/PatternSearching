@@ -24,7 +24,7 @@ public:
 
     void searchPattern(string expression, Ui_MainWindow *ui);
 
-    void searchPattern(string expression1, string expression2, bool constructie);
+    void searchPattern(string expression1, string expression2, bool constructie, Ui_MainWindow *ui);
 
     explicit Pattern(string inputtext);
 };

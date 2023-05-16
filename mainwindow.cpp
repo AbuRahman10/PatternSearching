@@ -45,13 +45,19 @@ void MainWindow::on_pushButton_clicked()
     // ONDERSCHEID DE GEVALLEN
 
     //GEVAL 1: WE GAAN PATTERNSEARCHING DOEN ADHV EERSTE BOX EN TEXT DIE WE HEBBEN
-    if(!regex_one.empty() && !checking_text.empty() && regex_two.empty())
+    if(!regex_one.empty() and !checking_text.empty() and regex_two.empty())
     {
         Pattern pattern(checking_text);
-        bool unie = false;
-        bool doorsnede = true;
         ui->textBrowser->clear();
         pattern.searchPattern(regex_one,ui);
+    }
+    else if (!regex_one.empty() and !checking_text.empty() and !regex_two.empty() and (checked_intersection or checked_union))
+    {
+        // TODO: probleem: de twee dfas worden op 1 json bestand gemaakt
+        Pattern pattern(checking_text);
+        bool constructie = checked_intersection;
+        ui->textBrowser->clear();
+        pattern.searchPattern(regex_one,regex_two,constructie,ui);
     }
 }
 
