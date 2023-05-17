@@ -18,7 +18,7 @@ A program that searches for a specific word in a text using the given regex
 | CASE 2  |SEARCH WITH 2 REGEXES      | V    |
 |   2     |RE to ENFA                 | V    |
 |   2     |ENFA to DFA                | V    |
-|   2     |PRODUCTAUTOMATION          |      |
+|   2     |PRODUCTAUTOMATON          |      |
 |   2     |DFA to minimized DFA       |      |
 |   2     |MARKER                     | V    |
 
