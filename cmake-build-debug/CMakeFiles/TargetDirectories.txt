@@ -1,4 +1,4 @@
-C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/CMakeFiles/main_gui.dir
-C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/CMakeFiles/main_gui_autogen.dir
+C:/Users/riwaa/CLionProjects/PatternSearching/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/riwaa/CLionProjects/PatternSearching/cmake-build-debug/CMakeFiles/main_gui.dir
+C:/Users/riwaa/CLionProjects/PatternSearching/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/riwaa/CLionProjects/PatternSearching/cmake-build-debug/CMakeFiles/main_gui_autogen.dir

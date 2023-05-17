@@ -7,6 +7,10 @@
 #include "ENFA.h"
 #include "iostream"
 #include "Pattern.h"
+#include <qstring.h>
+#include <qtextdocument.h>
+#include <qtextformat.h>
+#include <qtextcursor.h>
 
 using namespace std;
 
@@ -70,7 +74,7 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
         {
             string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
             ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
-            QString highlight_word = QString::fromStdString(expression);
+            QString highlight_word = QString::fromStdString(woord);
             QTextDocument* document = ui->givingtext_edit->document();
             QTextCursor cursor(document);
             QTextCharFormat highlightFormat;

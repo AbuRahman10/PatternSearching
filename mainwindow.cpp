@@ -1,5 +1,5 @@
 #include "mainwindow.h"
-#include "./ui_mainwindow.h"
+#include "../ui_mainwindow.h"
 #include <QPalette>
 #include <iostream>
 #include <QMessageBox>
@@ -37,6 +37,12 @@ void MainWindow::on_pushButton_clicked()
     // get the 2 regexes
     string regex_one = ui->Regexone_edit->text().toStdString();
     string regex_two = ui->Regextwo_edit->text().toStdString();
+    // TODO : there can't be any spaces betweeen the regexes !
+
+
+
+
+
     // checking for union or intersection
     bool checked_union = ui->union_radio->isChecked();
     bool checked_intersection = ui->intersection_radio->isChecked();

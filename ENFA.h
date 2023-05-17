@@ -39,6 +39,7 @@ public:
     void nextNodes(vector<int>* node, string input);
     void tryEps(vector<int>* nodes);
     void print();
+
 };
 
 
