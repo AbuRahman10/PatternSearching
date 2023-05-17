@@ -1,5 +1,5 @@
 # PatternSearching
-A program that searches for a specific regex in a text
+A program that searches for a specific word in a text using the given regex
 |TASKS | Functionaliteit           | Status|
 |---------|-------------------------- |------ |
 | GUI     | USER INTERFACE            | V    |
