@@ -70,6 +70,20 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
         {
             string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
             ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
+            QString highlight_word = QString::fromStdString(woord);
+            QTextDocument* document = ui->givingtext_edit->document();
+            QTextCursor cursor(document);
+            QTextCharFormat highlightFormat;
+            highlightFormat.setBackground(Qt::green);
+            // search this word in the whole text !
+            do{
+                cursor = document->find(highlight_word,cursor);
+                if(!cursor.isNull()){
+                    cursor.mergeCharFormat(highlightFormat);
+                }else{
+                    break;
+                }
+            }while(!cursor.atEnd());
             foundOne = true;
         }
         i++;
@@ -88,11 +102,8 @@ void Pattern::searchPattern(string expression1, string expression2, bool constru
     re1.output = "output/enfa1.json";
     re2.output = "output/enfa2.json";
 
-    ENFA enfa1;
-    ENFA enfa2;
-
-    enfa1 = re1.toENFA();
-    enfa2 = re2.toENFA();
+    ENFA enfa1 = re1.toENFA();
+    ENFA enfa2 = re2.toENFA();
 
     enfa1.output = "output/mssc1.json";
     enfa2.output = "output/mssc2.json";
