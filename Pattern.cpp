@@ -84,12 +84,14 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
             clearCursor.select(QTextCursor::Document);
             clearCursor.setCharFormat(QTextCharFormat());
 
-            // Search for the highlight word and apply the highlighting
-            cursor = document->find(highlight_word, cursor);
+            // Search for the highlight word specific and apply the highlighting
+            QString pattern = "\\b" + QString::fromStdString(woord) + "\\b";
+            QRegExp regex(pattern, Qt::CaseInsensitive);
+            cursor = document->find(regex, cursor);
             while (!cursor.isNull())
             {
                 cursor.mergeCharFormat(highlightFormat);
-                cursor = document->find(highlight_word, cursor);
+                cursor = document->find(regex, cursor);
             }
             foundOne = true;
         }
