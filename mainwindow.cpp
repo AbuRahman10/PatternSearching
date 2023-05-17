@@ -84,6 +84,10 @@ void MainWindow::on_pushButton_clicked()
             pattern.searchPattern(regex_one,regex_two,constructie,ui);
         }
     }
+    else
+    {
+        QMessageBox::warning(this,"ERROR","Couldn't do the searching !");
+    }
 }
 
 void MainWindow::exceptions(std::string& state_R1,std::string& state_R2, std::string& input_text,bool is_union,bool is_intersection){
