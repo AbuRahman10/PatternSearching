@@ -8,28 +8,18 @@
 		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\Qt\;CMake Files\..\..\..\..\Qt\5.15.2\;CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\;CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\;CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\;CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\;CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug"/>
+				<Option working_dir="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-				</MakeCommands>
-			</Target>
-			<Target title="edit_cache">
-				<Option working_dir="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug"/>
-				<Option type="4"/>
-				<MakeCommands>
-					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="main_gui">
-				<Option output="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/main_gui.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug"/>
+				<Option output="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/main_gui.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -37,32 +27,33 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
-					<Add directory="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug"/>
-					<Add directory="C:/Users/riwaa/CLionProjects/main_gui"/>
-					<Add directory="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/include"/>
+					<Add directory="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug"/>
+					<Add directory="C:/Users/aboba/CLionProjects/PatternSearching"/>
+					<Add directory="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/main_gui_autogen/include"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtWidgets"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtGui"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtANGLE"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtCore"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 main_gui"/>
-					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 main_gui"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="main_gui/fast">
-				<Option output="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/main_gui.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug"/>
+				<Option output="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/main_gui.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -70,162 +61,209 @@
 					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_CORE_LIB"/>
-					<Add directory="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug"/>
-					<Add directory="C:/Users/riwaa/CLionProjects/main_gui"/>
-					<Add directory="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/include"/>
+					<Add directory="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug"/>
+					<Add directory="C:/Users/aboba/CLionProjects/PatternSearching"/>
+					<Add directory="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/main_gui_autogen/include"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtWidgets"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtGui"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtANGLE"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/include/QtCore"/>
 					<Add directory="C:/Qt/5.15.2/mingw81_64/./mkspecs/win32-g++"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
-					<Add directory="C:/Qt/Tools/mingw810_64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include/c++/backward"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../include"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/include-fixed"/>
+					<Add directory="C:/Program Files/JetBrains/CLion 2022.3/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 main_gui/fast"/>
-					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 main_gui/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug"/>
+				<Option working_dir="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="main_gui_autogen">
-				<Option working_dir="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug"/>
+				<Option working_dir="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 main_gui_autogen"/>
-					<CompileFile command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/Qt/Tools/mingw810_64/bin/mingw32-make.exe -f &quot;C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 main_gui_autogen"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.3/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/DFA.cpp">
 			<Option target="main_gui"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/main.cpp">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/DFA.h">
 			<Option target="main_gui"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/mainwindow.cpp">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/ENFA.cpp">
 			<Option target="main_gui"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/mainwindow.h">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/ENFA.h">
 			<Option target="main_gui"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/mainwindow.ui">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/NFA.cpp">
 			<Option target="main_gui"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/CMakeLists.txt">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/NFA.h">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/Pattern.cpp">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/Pattern.h">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/RE.cpp">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/RE.h">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/main_gui_autogen/include/ui_mainwindow.h">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/cmake-build-debug/main_gui_autogen/mocs_compilation.cpp">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/json.hpp">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/main.cpp">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/mainwindow.cpp">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/mainwindow.h">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/mainwindow.ui">
+			<Option target="main_gui"/>
+		</Unit>
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5Config.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5Config.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="C:/Users/riwaa/CLionProjects/main_gui/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+		<Unit filename="C:/Users/aboba/CLionProjects/PatternSearching/../../../../Qt/5.15.2/mingw81_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\Qt\5.15.2\mingw81_64\lib\cmake\Qt5Core\"/>
 		</Unit>
 	</Project>

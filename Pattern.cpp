@@ -70,20 +70,24 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
         {
             string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
             ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
-            QString highlight_word = QString::fromStdString(woord);
+            QString highlight_word = QString::fromStdString(expression);
             QTextDocument* document = ui->givingtext_edit->document();
             QTextCursor cursor(document);
             QTextCharFormat highlightFormat;
             highlightFormat.setBackground(Qt::green);
-            // search this word in the whole text !
-            do{
-                cursor = document->find(highlight_word,cursor);
-                if(!cursor.isNull()){
-                    cursor.mergeCharFormat(highlightFormat);
-                }else{
-                    break;
-                }
-            }while(!cursor.atEnd());
+
+            // Remove the previous highlighting by resetting the format for the entire document
+            QTextCursor clearCursor(document);
+            clearCursor.select(QTextCursor::Document);
+            clearCursor.setCharFormat(QTextCharFormat());
+
+            // Search for the highlight word and apply the highlighting
+            cursor = document->find(highlight_word, cursor);
+            while (!cursor.isNull())
+            {
+                cursor.mergeCharFormat(highlightFormat);
+                cursor = document->find(highlight_word, cursor);
+            }
             foundOne = true;
         }
         i++;
