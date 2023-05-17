@@ -37,32 +37,52 @@ void MainWindow::on_pushButton_clicked()
     // get the 2 regexes
     string regex_one = ui->Regexone_edit->text().toStdString();
     string regex_two = ui->Regextwo_edit->text().toStdString();
-    // TODO : there can't be any spaces betweeen the regexes !
-
-
-
-
-
     // checking for union or intersection
     bool checked_union = ui->union_radio->isChecked();
     bool checked_intersection = ui->intersection_radio->isChecked();
     // check for ERROR CASES
     exceptions(regex_one,regex_two,checking_text,checked_union,checked_intersection);
     // ONDERSCHEID DE GEVALLEN
-
     //GEVAL 1: WE GAAN PATTERNSEARCHING DOEN ADHV EERSTE BOX EN TEXT DIE WE HEBBEN
     if(!regex_one.empty() and !checking_text.empty() and regex_two.empty())
     {
-        Pattern pattern(checking_text);
-        ui->textBrowser->clear();
-        pattern.searchPattern(regex_one,ui);
+        // detection for space chars !
+        auto it = std::find(regex_one.begin(),regex_one.end(),' ');
+        if (it != regex_one.end()){
+            QMessageBox::warning(this,"SPACE CHAR DETECTION","There cannot be any space characters in the regexboxes!");
+            //clearing that typed regex
+            ui->Regexone_edit->clear();
+        }else{
+            // We can do the pattern search
+            Pattern pattern(checking_text);
+            ui->textBrowser->clear();
+            pattern.searchPattern(regex_one,ui);
+        }
     }
-    else if (!regex_one.empty() and !checking_text.empty() and !regex_two.empty() and (checked_intersection or checked_union))
+    // GEVAL 2: WE GAAN PATTERNSEARCHING DOEN ADHV AANGEDUIDE OPERATIE EN 2 INVOER REGEXES
+    else if (!regex_one.empty() and !checking_text.empty() and !regex_two.empty() and (ui->intersection_radio->isChecked() or ui->union_radio->isChecked()))
     {
-        Pattern pattern(checking_text);
-        bool constructie = checked_intersection;
-        ui->textBrowser->clear();
-        pattern.searchPattern(regex_one,regex_two,constructie,ui);
+        //detection for space char
+        auto it_one = std::find(regex_one.begin(),regex_one.end(),' ');
+        auto it_two = std::find(regex_two.begin(),regex_two.end(),' ');
+        if (it_one != regex_one.end() or it_two != regex_two.end()){
+            QMessageBox::warning(this,"SPACE CHAR DETECTION","There cannot be any space characters in the regexboxes!");
+            // box 1 contains the space
+            if (it_one != regex_one.end()){
+                ui->Regexone_edit->clear();
+            }
+            // box 2 contains the space
+            if (it_two != regex_two.end()){
+                ui->Regextwo_edit->clear();
+            }
+        }
+        // We can do the pattern search
+        else{
+            Pattern pattern(checking_text);
+            bool constructie = checked_intersection;
+            ui->textBrowser->clear();
+            pattern.searchPattern(regex_one,regex_two,constructie,ui);
+        }
     }
 }
 
@@ -75,12 +95,12 @@ void MainWindow::exceptions(std::string& state_R1,std::string& state_R2, std::st
     else if((!state_R1.empty() && input_text.empty())){
         QMessageBox::warning(this,"ERROR","There is no checking text to do the searching !");
     }
-
     // FROM HERE THIS MEANS THERE IS SOMETHING ELSE WRONG WHEN WE ARE DOING OPERATIONS WITH 2 REGEXES
-
     // CASE 3: UNION AND INTERSECTION OPTIONS ARE BOTH CROSSED
     else if(is_union and is_intersection){
         QMessageBox::warning(this,"ERROR","We cannot do 2 operations on the same time!");
+        ui->union_radio->setChecked(false);
+        ui->intersection_radio->setChecked(false);
     }
     // CASE 4: REGEX2BOX IS EMPTY WHEN SELECTING UNION OR INTERSECTION OPERATION
     else if(!state_R1.empty() and state_R2.empty() and !input_text.empty() and (is_union or is_intersection)){
@@ -89,7 +109,6 @@ void MainWindow::exceptions(std::string& state_R1,std::string& state_R2, std::st
     // CASE 5: IF EVERYTHING IS NOT EMPTY BUT UNION AND INTERSECTION ARE NOT CHECKED
     else if(!input_text.empty() and !state_R1.empty() and !state_R2.empty() and (!is_union and !is_intersection)){
         QMessageBox::warning(this,"ERROR","You need to check the Union or Intersection option if you want to use 2 Regex boxes!");
-
     }
 }
 
