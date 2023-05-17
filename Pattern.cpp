@@ -70,16 +70,15 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
             continue;
         }
         bool accept = mindfa.accepts(woord);
+        QString highlight_word = QString::fromStdString(woord);
+        QTextDocument* document = ui->givingtext_edit->document();
+        QTextCursor cursor(document);
+        QTextCharFormat highlightFormat;
+        highlightFormat.setBackground(Qt::green);
         if (accept)
         {
             string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
             ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
-            QString highlight_word = QString::fromStdString(woord);
-            QTextDocument* document = ui->givingtext_edit->document();
-            QTextCursor cursor(document);
-            QTextCharFormat highlightFormat;
-            highlightFormat.setBackground(Qt::green);
-
             // Remove the previous highlighting by resetting the format for the entire document
             QTextCursor clearCursor(document);
             clearCursor.select(QTextCursor::Document);
@@ -99,6 +98,11 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
     if (!foundOne)
     {
         ui->textBrowser->insertPlainText(QString::fromStdString("Pattern not found!\n"));
+        // Remove the previous highlighting by resetting the format for the entire document
+        QTextDocument* document = ui->givingtext_edit->document();
+        QTextCursor clearCursor(document);
+        clearCursor.select(QTextCursor::Document);
+        clearCursor.setCharFormat(QTextCharFormat());
     }
 }
 
@@ -132,7 +136,7 @@ void Pattern::searchPattern(string expression1, string expression2, bool constru
             i = 0;
             continue;
         }
-        bool accept = dfa.accepts(woord);
+        bool accept = mindfa.accepts(woord);
         if (accept)
         {
             string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
