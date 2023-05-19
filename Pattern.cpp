@@ -63,6 +63,11 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
     bool foundOne = false;
     int line = 0;
     int i = 0;
+    // Remove the previous highlighting by resetting the format for the entire document
+    QTextDocument* doc = ui->givingtext_edit->document();
+    QTextCursor clearCursor(doc);
+    clearCursor.select(QTextCursor::Document);
+    clearCursor.setCharFormat(QTextCharFormat());
     for (string woord : woorden)
     {
         if (woord == "\n")
@@ -72,28 +77,27 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
             continue;
         }
         bool accept = mindfa.accepts(woord);
-        QString highlight_word = QString::fromStdString(woord);
-        QTextDocument* document = ui->givingtext_edit->document();
-        QTextCursor cursor(document);
-        QTextCharFormat highlightFormat;
-        highlightFormat.setBackground(Qt::green);
-
         if (accept)
         {
             string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
             ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
-/*            // Remove the previous highlighting by resetting the format for the entire document
-            QTextCursor clearCursor(document);
-            clearCursor.select(QTextCursor::Document);
-            clearCursor.setCharFormat(QTextCharFormat());*/
+
+            QString highlight_word = QString::fromStdString(woord);
+            QTextDocument* document = ui->givingtext_edit->document();
+            QTextCursor cursor(document);
+            QTextCharFormat highlightFormat;
+            highlightFormat.setBackground(Qt::green);
 
             cursor.movePosition(QTextCursor::StartOfLine);
             int targetline = line;
             QTextBlock chosenBlock;
 
-            if (targetline < document->blockCount()){
+            if (targetline < document->blockCount())
+            {
                 chosenBlock = document->findBlockByLineNumber(targetline);
-            }else{
+            }
+            else
+            {
                 // TARGET LINE  IS OUT OF RANGE
                 break;
             }
@@ -102,12 +106,14 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
             // keeping the counter of x_coordinate
             int teller_x = 0;
             // Iterate through each word in the line
-            while (!lineCursor.atEnd()) {
+            while (!lineCursor.atEnd())
+            {
                 lineCursor.select(QTextCursor::WordUnderCursor);
                 QString highlightedWord = lineCursor.selectedText();
                 std::string checkWord = highlightedWord.toStdString();
 
-                if (checkWord != woord or teller_x != i){
+                if (checkWord != woord or teller_x != i)
+                {
                     lineCursor.movePosition(QTextCursor::NextWord);
                     teller_x += 1;
                     continue;
@@ -115,14 +121,14 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
                 teller_x = 0;
                 // Erase the inside spaces
                 checkWord.erase(std::remove_if(checkWord.begin(), checkWord.end(), [](char c) { return std::isspace(c); }), checkWord.end());
-                if (checkWord == woord) {
+                if (checkWord == woord)
+                {
                     lineCursor.mergeCharFormat(highlightFormat);
                     break;
                 }
             }
             foundOne = true;
         }
-
         i++;
     }
     if (!foundOne)

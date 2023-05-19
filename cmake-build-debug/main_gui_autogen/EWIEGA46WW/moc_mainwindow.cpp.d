@@ -1,5 +1,5 @@
-C:/Users/riwaa/CLionProjects/PatternSearching/cmake-build-debug/main_gui_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/riwaa/CLionProjects/PatternSearching/mainwindow.h \
-  C:/Users/riwaa/CLionProjects/PatternSearching/cmake-build-debug/main_gui_autogen/moc_predefs.h \
+C:/Users/Abobaker\ Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/EWIEGA46WW/moc_mainwindow.cpp: C:/Users/Abobaker\ Rahman/CLionProjects/main_gui/mainwindow.h \
+  C:/Users/Abobaker\ Rahman/CLionProjects/main_gui/cmake-build-debug/main_gui_autogen/moc_predefs.h \
   C:/Qt/5.15.2/mingw81_64/include/QtCore/qalgorithms.h \
   C:/Qt/5.15.2/mingw81_64/include/QtCore/qarraydata.h \
   C:/Qt/5.15.2/mingw81_64/include/QtCore/qatomic.h \
