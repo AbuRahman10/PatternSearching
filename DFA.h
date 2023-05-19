@@ -16,6 +16,8 @@ using namespace std;
 class DFA
 {
 private:
+
+
     set<vector<string>> states;
     string input;
     json dfa;
@@ -38,6 +40,9 @@ private:
     vector<int> s;
     map<vector<string>, bool> table;
 public:
+
+    string output;
+
     DFA(DFA &dfa1, DFA &dfa2, bool constructie);
     DFA(const string &input);
     bool accepts(string input);

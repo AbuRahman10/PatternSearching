@@ -57,6 +57,7 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
     ENFA enfa = re.toENFA();
     enfa.output = "output/mssc.json";
     DFA dfa = enfa.toDFA();
+    dfa.output = "output/dfa.json";
     DFA mindfa = dfa.minimize();
     bool foundOne = false;
     int line = 0;
@@ -85,13 +86,11 @@ void Pattern::searchPattern(string expression, Ui_MainWindow *ui)
             clearCursor.setCharFormat(QTextCharFormat());
 
             // Search for the highlight word specific and apply the highlighting
-            QString pattern = "\\b" + QString::fromStdString(woord) + "\\b";
-            QRegExp regex(pattern, Qt::CaseInsensitive);
-            cursor = document->find(regex, cursor);
+            cursor = document->find(highlight_word, cursor);
             while (!cursor.isNull())
             {
                 cursor.mergeCharFormat(highlightFormat);
-                cursor = document->find(regex, cursor);
+                cursor = document->find(highlight_word, cursor);
             }
             foundOne = true;
         }
@@ -125,8 +124,13 @@ void Pattern::searchPattern(string expression1, string expression2, bool constru
     DFA dfa1 = enfa1.toDFA();
     DFA dfa2 = enfa2.toDFA();
 
-    DFA dfa(dfa1,dfa2,constructie);
-    DFA mindfa = dfa.minimize();
+    dfa1.output = "output/dfa1.json";
+    dfa2.output = "output/dfa2.json";
+
+    //DFA dfa(dfa1,dfa2,constructie);
+    DFA mindfa1 = dfa1.minimize();
+    DFA mindfa2 = dfa2.minimize();
+
     bool foundOne = false;
     int line = 0;
     int i = 0;
@@ -138,17 +142,35 @@ void Pattern::searchPattern(string expression1, string expression2, bool constru
             i = 0;
             continue;
         }
-        bool accept = mindfa.accepts(woord);
-        if (accept)
+        bool accept1 = mindfa1.accepts(woord);
+        bool accept2 = mindfa2.accepts(woord);
+        if (!constructie)
         {
-            string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
-            ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
-            foundOne = true;
+            if (accept1 or accept2)
+            {
+                string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
+                ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
+                foundOne = true;
+            }
+        }
+        else if (constructie)
+        {
+            if (accept1 and accept2)
+            {
+                string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
+                ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
+                foundOne = true;
+            }
         }
         i++;
     }
     if (!foundOne)
     {
         ui->textBrowser->insertPlainText(QString::fromStdString("Pattern not found!\n"));
+        // Remove the previous highlighting by resetting the format for the entire document
+        QTextDocument* document = ui->givingtext_edit->document();
+        QTextCursor clearCursor(document);
+        clearCursor.select(QTextCursor::Document);
+        clearCursor.setCharFormat(QTextCharFormat());
     }
 }

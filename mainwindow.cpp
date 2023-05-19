@@ -77,7 +77,8 @@ void MainWindow::on_pushButton_clicked()
             }
         }
         // We can do the pattern search
-        else{
+        else
+        {
             Pattern pattern(checking_text);
             bool constructie = checked_intersection;
             ui->textBrowser->clear();

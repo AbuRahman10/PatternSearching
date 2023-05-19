@@ -75,7 +75,16 @@ void DFA::productautomaat(const string &file1, const string &file2)
     ifstream inp2(file2);
     inp2 >> dfa2;
     dfa["type"] = "DFA";
-    dfa["alphabet"] = dfa1["alphabet"];
+    set<string> alphabets;
+    for (string letter : dfa1["alphabet"])
+    {
+        alphabets.insert(letter);
+    }
+    for (string letter : dfa2["alphabet"])
+    {
+        alphabets.insert(letter);
+    }
+    dfa["alphabet"] = alphabets;
     dfa["states"] = {};
     dfa["transitions"] = {};
     vector<string> startstate;
@@ -118,7 +127,7 @@ void DFA::transitionTable(vector<string> state)
 {
     vector<vector<string>> inpStates;
 
-    if (states.find(state) != states.end())
+    if (states.find(state) != states.end() or state.empty())
     {
         return;
     }
@@ -140,18 +149,27 @@ vector<string> DFA::transitionState(vector<string> state, string inp)
     vector<string> inpState;
     for (int i = 0;i < dfa1["transitions"].size();i++)
     {
+        bool toegevoegd = false;
         if (dfa1["transitions"][i]["from"] == state[0] and dfa1["transitions"][i]["input"] == inp)
         {
             inpState.push_back(dfa1["transitions"][i]["to"]);
+            toegevoegd = true;
         }
     }
     for (int i = 0;i < dfa2["transitions"].size();i++)
     {
+        bool toegevoegd = false;
         if (dfa2["transitions"][i]["from"] == state[1] and dfa2["transitions"][i]["input"] == inp)
         {
             inpState.push_back(dfa2["transitions"][i]["to"]);
+            toegevoegd = true;
         }
     }
+
+
+    string from = stateString(state);
+    string to = stateString(inpState);
+    string input = inp;
     dfa["transitions"].push_back({{"from", stateString(state)}, {"to",stateString(inpState)}, {"input", inp}});
     return inpState;
 }
@@ -733,10 +751,10 @@ DFA DFA::minimize()
     min_dfa["transitions"] = transitions;
 
 
-    ofstream output("output/tfa.json");
-    output << min_dfa;
-    output.close();
-    return DFA("output/tfa.json");
+    ofstream out(output);
+    out << min_dfa;
+    out.close();
+    return DFA(output);
 }
 
 bool DFA::acceptCheck(string name1, string name2)
