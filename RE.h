@@ -50,6 +50,7 @@ public:
     void buildStates(int end);
     void buildAlph();
     static bool noOperators(string const &expression);
+    bool tussenHaakjes(string exp);
 };
 
 

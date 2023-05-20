@@ -265,6 +265,16 @@ void RE::buildAlph()
 
 ENFA RE::toENFA()
 {
+    while (tussenHaakjes(regex))
+    {
+        string old_regex = regex;
+        regex = removeBracket(regex);
+        if (old_regex == regex)
+        {
+            break;
+        }
+    }
+
     int opers = calculateOperations(regex) - 1;
     renfa =
     {
@@ -284,4 +294,12 @@ ENFA RE::toENFA()
     file.close();
     ENFA enfa(output);
     return enfa;
+}
+
+bool RE::tussenHaakjes(string exp) {
+    if (exp[0] == '(' and exp[exp.size()-1] == ')')
+    {
+        return true;
+    }
+    return false;
 }
