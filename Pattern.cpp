@@ -186,6 +186,52 @@ void Pattern::searchPattern(string expression1, string expression2, bool constru
                 string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
                 ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
                 foundOne = true;
+
+                QString highlight_word = QString::fromStdString(woord);
+                QTextDocument* document = ui->givingtext_edit->document();
+                QTextCursor cursor(document);
+                QTextCharFormat highlightFormat;
+                highlightFormat.setBackground(Qt::green);
+
+                cursor.movePosition(QTextCursor::StartOfLine);
+                int targetline = line;
+                QTextBlock chosenBlock;
+
+                if (targetline < document->blockCount())
+                {
+                    chosenBlock = document->findBlockByLineNumber(targetline);
+                }
+                else
+                {
+                    // TARGET LINE  IS OUT OF RANGE
+                    break;
+                }
+                // This will be the block where we will search our word
+                QTextCursor lineCursor(chosenBlock);
+                // keeping the counter of x_coordinate
+                int teller_x = 0;
+                // Iterate through each word in the line
+                while (!lineCursor.atEnd())
+                {
+                    lineCursor.select(QTextCursor::WordUnderCursor);
+                    QString highlightedWord = lineCursor.selectedText();
+                    std::string checkWord = highlightedWord.toStdString();
+
+                    if (checkWord != woord or teller_x != i)
+                    {
+                        lineCursor.movePosition(QTextCursor::NextWord);
+                        teller_x += 1;
+                        continue;
+                    }
+                    teller_x = 0;
+                    // Erase the inside spaces
+                    checkWord.erase(std::remove_if(checkWord.begin(), checkWord.end(), [](char c) { return std::isspace(c); }), checkWord.end());
+                    if (checkWord == woord)
+                    {
+                        lineCursor.mergeCharFormat(highlightFormat);
+                        break;
+                    }
+                }
             }
         }
         else if (constructie)
@@ -195,6 +241,52 @@ void Pattern::searchPattern(string expression1, string expression2, bool constru
                 string output_display = "Pattern found at line: " + to_string(line) + " and indexword: " + to_string(i) + "\n";
                 ui->textBrowser->insertPlainText(QString::fromStdString(output_display));
                 foundOne = true;
+
+                QString highlight_word = QString::fromStdString(woord);
+                QTextDocument* document = ui->givingtext_edit->document();
+                QTextCursor cursor(document);
+                QTextCharFormat highlightFormat;
+                highlightFormat.setBackground(Qt::green);
+
+                cursor.movePosition(QTextCursor::StartOfLine);
+                int targetline = line;
+                QTextBlock chosenBlock;
+
+                if (targetline < document->blockCount())
+                {
+                    chosenBlock = document->findBlockByLineNumber(targetline);
+                }
+                else
+                {
+                    // TARGET LINE  IS OUT OF RANGE
+                    break;
+                }
+                // This will be the block where we will search our word
+                QTextCursor lineCursor(chosenBlock);
+                // keeping the counter of x_coordinate
+                int teller_x = 0;
+                // Iterate through each word in the line
+                while (!lineCursor.atEnd())
+                {
+                    lineCursor.select(QTextCursor::WordUnderCursor);
+                    QString highlightedWord = lineCursor.selectedText();
+                    std::string checkWord = highlightedWord.toStdString();
+
+                    if (checkWord != woord or teller_x != i)
+                    {
+                        lineCursor.movePosition(QTextCursor::NextWord);
+                        teller_x += 1;
+                        continue;
+                    }
+                    teller_x = 0;
+                    // Erase the inside spaces
+                    checkWord.erase(std::remove_if(checkWord.begin(), checkWord.end(), [](char c) { return std::isspace(c); }), checkWord.end());
+                    if (checkWord == woord)
+                    {
+                        lineCursor.mergeCharFormat(highlightFormat);
+                        break;
+                    }
+                }
             }
         }
         i++;
