@@ -20,6 +20,7 @@ private:
 
     set<vector<string>> states;
     string input;
+    json j;
     json dfa;
     string start;
     string current;

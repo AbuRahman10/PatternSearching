@@ -74,7 +74,7 @@ void DFA::productautomaat(const string &file1, const string &file2)
     inp1 >> dfa1;
     ifstream inp2(file2);
     inp2 >> dfa2;
-    dfa["type"] = "DFA";
+    j["type"] = "DFA";
     set<string> alphabets;
     for (string letter : dfa1["alphabet"])
     {
@@ -84,9 +84,9 @@ void DFA::productautomaat(const string &file1, const string &file2)
     {
         alphabets.insert(letter);
     }
-    dfa["alphabet"] = alphabets;
-    dfa["states"] = {};
-    dfa["transitions"] = {};
+    j["alphabet"] = alphabets;
+    j["states"] = {};
+    j["transitions"] = {};
     vector<string> startstate;
     startstate.push_back(startState(dfa1));
     startstate.push_back(startState(dfa2));
@@ -97,10 +97,10 @@ void DFA::productautomaat(const string &file1, const string &file2)
         construction = start_accept(st);
         bool starting = construction[0];
         bool accepting = construction[1];
-        dfa["states"].push_back({{"name", stateString(st)},{"starting", starting},{"accepting", accepting}});
+        j["states"].push_back({{"name", stateString(st)},{"starting", starting},{"accepting", accepting}});
     }
     ofstream file("output/product.json");
-    file << dfa;
+    file << j;
     file.close();
     input = "output/product.json"; //json dfa gaat dit bestand openen
 }

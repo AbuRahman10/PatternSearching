@@ -162,13 +162,19 @@ void Pattern::searchPattern(string expression1, string expression2, bool constru
     dfa1.output = "output/dfa1.json";
     dfa2.output = "output/dfa2.json";
 
-    //DFA dfa(dfa1,dfa2,constructie);
     DFA mindfa1 = dfa1.minimize();
     DFA mindfa2 = dfa2.minimize();
+    DFA dfa(mindfa1,mindfa2,constructie);
 
     bool foundOne = false;
     int line = 0;
     int i = 0;
+
+    // Remove the previous highlighting by resetting the format for the entire document
+    QTextDocument* doc = ui->givingtext_edit->document();
+    QTextCursor clearCursor(doc);
+    clearCursor.select(QTextCursor::Document);
+    clearCursor.setCharFormat(QTextCharFormat());
     for (string woord : woorden)
     {
         if (woord == "\n")

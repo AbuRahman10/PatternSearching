@@ -1,4 +1,5 @@
-C:/Users/sejar/Documents/CG/PatternSearching/cmake-build-debug/CMakeFiles/main_gui.dir
-C:/Users/sejar/Documents/CG/PatternSearching/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/Users/sejar/Documents/CG/PatternSearching/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/sejar/Documents/CG/PatternSearching/cmake-build-debug/CMakeFiles/main_gui_autogen.dir
+C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/CMakeFiles/main_gui.dir
+C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/CMakeFiles/main_gui_autogen_timestamp_deps.dir
+C:/Users/Abobaker Rahman/CLionProjects/main_gui/cmake-build-debug/CMakeFiles/main_gui_autogen.dir
