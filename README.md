@@ -23,7 +23,7 @@ A program that searches for a specific word in a text using the given regex
 |   2     |DFA to minimized DFA       | V      |
 |   2     |MARKER                     | V      |
 
-
+Made by Abobaker Rahman / Riwaaz Ranabhat / Ahmmad Dindar
 
 
 
